@@ -13,7 +13,8 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            title: 'Webpack Vladilen'
+            
+            template: './src/index.html'
         })
     ]
 }
