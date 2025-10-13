@@ -10,23 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/Post.js":
-/*!*********************!*\
-  !*** ./src/Post.js ***!
-  \*********************/
+/***/ "./Post.js":
+/*!*****************!*\
+  !*** ./Post.js ***!
+  \*****************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Post)\n/* harmony export */ });\nclass Post {\r\n    constructor(title) {\r\n    this.title = title \r\n    this.date = new Date() \r\n    }\r\n\r\n    toString() {\r\n        return JSON.stringify({\r\n            tittle: this.title,\r\n            date: this.date.toJSON()\r\n        })\r\n    }\r\n}\n\n//# sourceURL=webpack://webpack/./src/Post.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Post)\n/* harmony export */ });\nclass Post {\r\n    constructor(title) {\r\n    this.title = title \r\n    this.date = new Date() \r\n    }\r\n\r\n    toString() {\r\n        return JSON.stringify({\r\n            tittle: this.title,\r\n            date: this.date.toJSON()\r\n        })\r\n    }\r\n\r\n    get uppercaseTitle() {\r\n        return this.title.toUpperCase()\r\n    }\r\n}\n\n//# sourceURL=webpack:///./Post.js?\n}");
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./index.js":
+/*!******************!*\
+  !*** ./index.js ***!
+  \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Post */ \"./src/Post.js\");\n\r\n\r\nconst post = new _Post__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('Webpack Post Title')\r\n\r\nconsole.log('Post to String', post.toString())\n\n//# sourceURL=webpack://webpack/./src/index.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Post */ \"./Post.js\");\n\r\n\r\nconst post = new _Post__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('Webpack Post Title')\r\n\r\nconsole.log('Post to String', post.toString())\n\n//# sourceURL=webpack:///./index.js?\n}");
 
 /***/ })
 
@@ -90,7 +90,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Po
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./index.js");
 /******/ 	
 /******/ })()
 ;
