@@ -8,7 +8,7 @@ export default class Post {
     toString() {
         return JSON.stringify({
             tittle: this.title,
-            date: this.date.toJSON()
+            date: this.date.toJSON(),
             img: this.img
         })
     }
